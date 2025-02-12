@@ -56,6 +56,18 @@
   border-radius: 10px;
 }
 
+.overlay {
+  display: none;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 30%;
+  background-color: black;
+  border-radius: 10px;
+}
+
 .building-name {
   display: flex;
   position: absolute;
@@ -83,7 +95,7 @@
   right: 0;
   font-size: 13px;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 15px;
   box-sizing: border-box;
 }
 
@@ -93,4 +105,55 @@
   width: 10px;
   background-color: #4cae55;
   border-radius: 50%;
+}
+
+@media (max-width: 1500px) {
+  .tiles {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .tiles {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .tiles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tile {
+    height: 300px;
+  }
+}
+
+@media (max-width: 650px) {
+  .tiles {
+    grid-template-columns: 1fr;
+  }
+
+  .tile {
+    height: 100px;
+  }
+
+  .overlay {
+    display: block;
+  }
+
+  .building-name {
+    top: calc(50% - 35px);
+    left: 0;
+    padding-left: 10px;
+    font-weight: bold;
+    background-color: transparent;
+  }
+
+  .rooms-available {
+    height: 34px;
+    padding: 8px 15px 8px 10px;
+    margin-right: 20px;
+    top: calc(50% - 27px);
+  }
 }
