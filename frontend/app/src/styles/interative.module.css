@@ -1,0 +1,63 @@
+.logo {
+  cursor: pointer;
+}
+
+.icon-btn {
+  padding: 8px;
+  height: 42px;
+  width: 42px;
+  color: #ef7021;
+  background-color: white;
+  border: 0.8px solid #ef7021;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  color: white;
+  background-color: #ef7021;
+}
+
+.icon-btn:focus {
+  color: white;
+  background-color: #ef7021;
+}
+
+.btn-grp {
+  grid: 2;
+  justify-self: self-end;
+  display: flex;
+  justify-content: space-between;
+  width: 192px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  padding: 20px;
+  height: 44px;
+  width: 140px;
+  color: #ef7021;
+  border: 1.5px solid #ef7021;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  padding-left: 14px;
+  height: 44px;
+  width: 50%;
+  color: gray;
+  border: 0.8px solid gray;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.search {
+  border: none;
+}
