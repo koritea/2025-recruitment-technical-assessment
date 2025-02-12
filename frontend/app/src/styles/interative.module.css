@@ -46,18 +46,6 @@
   cursor: pointer;
 }
 
-.searchbar {
-  display: flex;
-  align-items: center;
-  padding-left: 14px;
-  height: 44px;
-  width: 50%;
-  color: gray;
-  border: 0.8px solid gray;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
 .search {
   border: none;
 }

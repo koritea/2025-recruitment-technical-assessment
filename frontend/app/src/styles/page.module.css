@@ -30,6 +30,7 @@
 
 .filterbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin: 8px 0;
@@ -130,6 +131,10 @@
 }
 
 @media (max-width: 650px) {
+  .filterbar {
+    height: 105px;
+  }
+
   .tiles {
     grid-template-columns: 1fr;
   }
