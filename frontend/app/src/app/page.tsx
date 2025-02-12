@@ -26,7 +26,12 @@ export default function Home() {
         <FilterBar />
         <div className={styles.tiles}>
           {buildings.map((b, index) => (
-            <BuildingTile name={b[0]} code={b[1]} rooms={availability[index]} />
+            <BuildingTile
+              key={b[0]}
+              name={b[0]}
+              code={b[1]}
+              rooms={availability[index]}
+            />
           ))}
         </div>
       </div>
